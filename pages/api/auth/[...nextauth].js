@@ -3,6 +3,7 @@ import Providers from "next-auth/providers";
 import Adapters from "next-auth/adapters";
 import { PrismaClient } from "@prisma/client";
 
+const prisma = new PrismaClient();
 // For more information on each option (and a full list of options) go to
 // https://next-auth.js.org/configuration/options
 export default NextAuth({
